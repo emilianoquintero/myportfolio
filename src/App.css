@@ -1,0 +1,229 @@
+.App {
+  background-image: url('/public/background.gif');
+  background-size: cover; /* Ajusta el tamaño del fondo */
+  background-repeat: no-repeat; /* Evita que el GIF se repita */
+  background-position: center; /* Centra el GIF */
+  background-attachment: fixed; /* Fija el fondo para evitar que se mueva con el desplazamiento */
+
+  display: flex; /* Activa Flexbox */
+  justify-content: center; /* Centra horizontalmente */
+  align-items: center; /* Centra verticalmente */
+  height: 100vh; /* Ajusta la altura del contenedor */
+  width: 100vw; /* Ajusta la anchura del contenedor */
+ 
+  box-sizing: border-box; /* Incluye el padding y el borde en el tamaño total del contenedor */
+}
+
+.App-container {
+  margin: 8vh 6vw;
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 84vh;
+  max-width: 1268px;
+  max-height: 674px;
+}
+
+.App-header {
+  margin-right: 8px;
+  position: relative;
+  left: 0;
+  top: 25%;
+  float: left;
+  list-style-type: none;
+}
+
+.App-list-menu {
+  padding: 0%;
+  list-style-type: none;
+  background-color: #191919;
+}
+
+.App-list-menu ul {
+  list-style-type: none; /* Elimina los puntos de las listas */
+  padding: 0;
+  margin: 0;
+  margin-top: 10px;
+}
+
+.App-Profile-card {
+  position: relative;
+  float: left;
+  width: 480px;
+  height: 100%;
+  background-color: #191919;
+  z-index: 1;
+}
+
+.Profile-card-align {
+  position: relative;
+  left: 0%;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.Profile-photo {
+  background-image: url('/public/logo512.png');
+  position: absolute;
+  overflow: hidden;
+  left: 0;
+  top: 0;
+  height: 57%;
+  width: 100%;;
+  background-size: cover;
+  background-position: center;
+}
+
+.Profile-name {
+  margin-top: 240px;
+  margin-bottom: 15px;
+}
+
+.Profile-title {
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.Profile-social {
+  margin-bottom: 15px;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.Profile-social a {
+  margin: 0 6px;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.Profile-card-bottoms {
+  display: flex;
+  flex-direction: row;
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  width: 100%;
+  height: 70px;
+}
+
+.Profile-card-bottoms a {
+  display: block;
+  float: none;
+  width: 100%;
+  font-size: 14px;
+  height: 70px;
+  line-height: 70px;
+  font-weight: 500;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.Card-inner {
+  position: absolute;
+  left: 560px;
+  right: 0px;
+  top: 15px;
+  bottom: 15px;
+  width: auto;
+  height: auto;
+  padding: 0px;
+  overflow: hidden;
+  transition: visibility 1s linear, opacity linear;
+  background-color: #191919;
+}
+
+.Card-inner.active {
+  opacity: 1;
+  visibility: visible;
+  z-index: 0;
+}
+
+.card-inner.hidden {
+  opacity: 0;
+  visibility: hidden;
+  z-index: 0;
+}
+
+.Card-inner.animated {
+  opacity: 1;
+  visibility: visible;
+  z-index: 0;
+}
+
+.Card-inner-content-about {
+  padding: 30px 30px 0 30px;
+  position: relative;
+  height: 100%;
+  overflow: auto;
+  overflow-x: hidden;
+}
+
+.Title {
+  color: rgba(255, 255, 255, 0.85);
+  margin: 0 0 0 0;
+  padding: 0 0 30px 0;
+  font-size: 20px;
+  line-height: 21px;
+  min-height: 51px;
+  font-weight: 600;
+  z-index: 2;
+}
+
+.First-word{
+  color: #edff20 !important;
+}
+
+.FadeInLeft {
+  -webkit-animation-name: FadeInLeft;
+  animation-name: FadeInLeft;
+}
+
+.FadeOutLeft {
+  -webkit-animation-name: FadeOutLeft;
+  animation-name: FadeOutLeft;
+}
+
+.Animated {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+@keyframes FadeInLeft {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(-70%, 0, 0);
+    transform: translate3d(-70%, 0, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes FadeOutLeft {
+  from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+    -webkit-transform: translate3d(-70%, 0, 0);
+    transform: translate3d(-70%, 0, 0);
+  }
+}
