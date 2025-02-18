@@ -1,6 +1,9 @@
 import logo from './logo.svg';
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import HeaderMetasApp from './components/metasapp/HeaderMetasApp';
+import PrincipalMetasApp from './components/metasapp/PrincipalMetasApp';
+import FooterMetasApp from './components/metasapp/FooterMetasApp';
 
 function App() {
   return (
@@ -36,7 +39,7 @@ function App() {
             </div>
           </div>
         </div>
-        <div className='Card-inner Animated active FadeInLeft'>
+        <div className='Card-inner Animated active FadeOutLeft'>
         <div className='Card-inner-content-about'>
             <div className='Title'>
               <span className='First-word'>About </span>
@@ -59,6 +62,13 @@ function App() {
         <div className='Card-inner Animated hidden FadeOutLeft'>
           <div className='Card-inner-content'>
             <h1>Adios</h1>
+          </div>
+        </div>
+        <div className='Card-inner Animated hidden FadeOutIn'>
+          <div className='Card-inner-content'>
+            <HeaderMetasApp></HeaderMetasApp>
+            <PrincipalMetasApp></PrincipalMetasApp>
+            <FooterMetasApp></FooterMetasApp>
           </div>
         </div>
       </div>

@@ -1,3 +1,5 @@
+@import url('https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.8.1/font/bootstrap-icons.min.css');
+
 .App {
   background-image: url('/public/background.gif');
   background-size: cover; /* Ajusta el tamaño del fondo */
@@ -164,6 +166,14 @@
   overflow-x: hidden;
 }
 
+.Card-inner-content {
+  padding: 30px 30px 0 30px;
+  position: relative;
+  height: 100%;
+  overflow: auto;
+  overflow-x: hidden;
+}
+
 .Title {
   color: rgba(255, 255, 255, 0.85);
   margin: 0 0 0 0;
@@ -194,6 +204,21 @@
   animation-duration: 1s;
   -webkit-animation-fill-mode: both;
   animation-fill-mode: both;
+}
+
+.sidebar {
+  width: 100px; /* Ancho fijo para la barra lateral */
+  margin: 0;
+  background-color: #f4f4f4; /* Color de fondo para distinguir la barra lateral */
+}
+
+.Sin-Padding {
+  padding-bottom: 0%;
+}
+
+.sin-estilo-enlace {
+  color: inherit; /* Hereda el color del elemento padre */
+  text-decoration: none; /* Quita el subrayado */
 }
 
 @media (prefers-reduced-motion: no-preference) {
