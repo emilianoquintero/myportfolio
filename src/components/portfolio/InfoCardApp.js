@@ -1,3 +1,4 @@
+import './InfoCardApp.css'
 import FooterMetasApp from "../metasapp/FooterMetasApp";
 import HeaderMetasApp from "../metasapp/HeaderMetasApp";
 import Metas from "../metasapp/list/Meta";

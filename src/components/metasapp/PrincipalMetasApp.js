@@ -1,3 +1,5 @@
+import './PrincipalMetasApp.css'
+
 function PrincipalMetasApp({ children }) {
     return (
         <div class="d-flex flex-row mb-2 fw-semibold" style={{ height: '80%' }}>

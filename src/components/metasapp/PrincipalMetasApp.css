@@ -1,0 +1,14 @@
+.sidebar {
+    width: 100px; /* Ancho fijo para la barra lateral */
+    margin: 0;
+    background-color: #f4f4f4; /* Color de fondo para distinguir la barra lateral */
+}
+  
+.Sin-Padding {
+    padding-bottom: 0%; 
+}
+
+.sin-estilo-enlace {
+    color: inherit; /* Hereda el color del elemento padre */
+    text-decoration: none; /* Quita el subrayado */
+}
