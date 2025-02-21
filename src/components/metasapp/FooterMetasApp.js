@@ -1,5 +1,3 @@
-
-
 function FooterMetasApp() {
     return (
         <footer className="bg-succes-subtle p-1 text-white text-end Sin-Padding">

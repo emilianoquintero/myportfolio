@@ -27,28 +27,6 @@
   max-height: 674px;
 }
 
-.App-header {
-  margin-right: 8px;
-  position: relative;
-  left: 0;
-  top: 25%;
-  float: left;
-  list-style-type: none;
-}
-
-.App-list-menu {
-  padding: 0%;
-  list-style-type: none;
-  background-color: #191919;
-}
-
-.App-list-menu ul {
-  list-style-type: none; /* Elimina los puntos de las listas */
-  padding: 0;
-  margin: 0;
-  margin-top: 10px;
-}
-
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
