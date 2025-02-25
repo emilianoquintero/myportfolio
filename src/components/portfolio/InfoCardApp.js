@@ -6,14 +6,13 @@ import Metas from "../metasapp/list/Meta";
 import PrincipalMetasApp from "../metasapp/PrincipalMetasApp";
 
 function InfoCardApp( {activeDivId} ) {
-    console.log(activeDivId);
     
     return (
         <>
-        <div id='div1' className={`Card-inner Animated active ${activeDivId === 'div1' ? 'FadeInLeft' : 'FadeOutLeft'}`}>
+        <div id='About' className={`Card-inner Animated active ${activeDivId === 'About' ? 'FadeInLeft' : 'FadeOutLeft'}`}>
             <div className='Card-inner-content-about'>
                 <div className='Title'>
-                    <span className='First-word'>About {activeDivId}</span>
+                    <span className='First-word'>About </span>
                         Me
                 </div>
                 <div className='row'>
@@ -30,18 +29,28 @@ function InfoCardApp( {activeDivId} ) {
                 </div>
             </div>
         </div>
-        <div id='div2' className={`Card-inner Animated active ${activeDivId === 'div2' ? 'FadeInLeft' : 'FadeOutLeft'}`}>
+        <div id='Resume' className={`Card-inner Animated active ${activeDivId === 'Resume' ? 'FadeInLeft' : 'FadeOutLeft'}`}>
           <div className='Card-inner-content'>
-            <h1>Adios</h1>
+            <h1>Resume</h1>
           </div>
         </div>
-        <div className='Card-inner Animated hidden FadeOutLeft'>
+        <div id='Works' className={`Card-inner Animated active ${activeDivId === 'Works' ? 'FadeInLeft' : 'FadeOutLeft'}`}>
           <div className='Card-inner-content'>
             <HeaderMetasApp></HeaderMetasApp>
             <PrincipalMetasApp>
                 <Metas></Metas>
             </PrincipalMetasApp>
             <FooterMetasApp></FooterMetasApp>
+          </div>
+        </div>
+        <div id='Apps' className={`Card-inner Animated active ${activeDivId === 'Apps' ? 'FadeInLeft' : 'FadeOutLeft'}`}>
+          <div className='Card-inner-content'>
+            <h1>Apps</h1>
+          </div>
+        </div>
+        <div id='Contact' className={`Card-inner Animated active ${activeDivId === 'Contact' ? 'FadeInLeft' : 'FadeOutLeft'}`}>
+          <div className='Card-inner-content'>
+            <h1>Contact</h1>
           </div>
         </div>
         </>

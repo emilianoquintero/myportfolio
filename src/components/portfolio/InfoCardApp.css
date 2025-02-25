@@ -10,6 +10,7 @@
     overflow: hidden;
     transition: visibility 1s linear, opacity linear;
     background-color: #191919;
+    border-radius: 15px;
 }
   
 .Card-inner.active {

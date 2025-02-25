@@ -6,16 +6,14 @@ import ProfileCardApp from './components/portfolio/ProfileCardApp';
 import InfoCardApp from './components/portfolio/InfoCardApp';
 
 function App() {
-  const [activeDivId, setActiveDivId] = useState('div1'); // Valor inicial aquí
 
+  const [activeDivId, setActiveDivId] = useState('About'); // Valor inicial aquí
   return (
-    <div className="App">
     
       <div className='App-container'>
         <MenuApp setActiveDivId={setActiveDivId}/>
         <ProfileCardApp />
         <InfoCardApp activeDivId={activeDivId}/>
-      </div>
     </div>
   );
 }
