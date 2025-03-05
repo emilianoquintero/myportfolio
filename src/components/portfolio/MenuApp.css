@@ -1,24 +1,70 @@
 .menu-header {
-    margin-right: 8px;
+    margin-right: .5em;
     position: relative;
-    left: 0;
-    top: 25%;
     float: left;
-    list-style-type: none;
+}
+
+.button-menu {
+    display: flex;
+    justify-content: center; 
+    align-items: center;    
+    background-color: #191919;
+    width: 2.5em;
+    height: 2.5em;
+    font-size: 2em;
+    border-radius: 30px;
 }
   
-.list-menu {
-    list-style-type: none; /* Elimina los puntos de las listas */
-    padding: 0%;
+.list-menu { 
     list-style-type: none;
-    background-color: #191919;
-    border-radius: 5px;
+    display: flex;
+    justify-content: center; 
+    align-items: center;   
+    background-color: #191919; 
+    padding: 0%;
+    width: 5em;
+    margin-top: 25%;
+    border-radius: 30px;
 }
 
 .list-menu ul {
+    font-size: 20px;
     list-style-type: none; /* Elimina los puntos de las listas */
     padding: 0;
     margin: 0;
     margin-top: 10px;
     cursor: pointer; /* Cambia el cursor a un puntero (como un botón) */
 }
+
+.tooltip-text {
+    background-color:  rgba(21, 20, 20, 0.822);
+    visibility: hidden;
+    width: 0;
+    color: #fff;
+    text-align: center;
+    border-radius: 20px;
+    padding: 5px 10px;
+    position: absolute;
+    z-index: 2;
+    top: 50%;
+    left: calc(100% + 10px);
+    transform: translateY(-50%);
+    opacity: 0;
+    transition: opacity 0.3s, width 0.3s;
+    white-space: nowrap;
+    overflow: hidden;
+    font-size: 12px;
+    font-weight: bold;
+  }
+  
+  .custom-tooltip:hover .tooltip-text {
+    visibility: visible;
+    opacity: 1;
+    width: auto;
+  }
+
+  .custom-tooltip {
+    position: relative;
+    display: block; /* Asegura que cada ítem de la lista esté en una nueva línea */
+    margin-bottom: 10px; /* Espaciado entre los ítems de la lista */
+  }

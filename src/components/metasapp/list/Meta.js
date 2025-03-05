@@ -1,20 +1,27 @@
 import './Meta.css'
 
-function Metas() {
+function Metas({ icono, eventos, periodo, detalles, meta, completado}) {
+    const porcentaje = (completado / meta) * 100;
     return (
-        <div className="d-flex tamaño-texto">
-            <div className="flex-grow-1 flex-container">
-                <div className='flex-item'>ICONO</div>
-                <p className='flex-item'>1<sub>/semana</sub></p>
-                <p className='flex-item'>detalles</p>
+        <div className='card'>
+        <div className="card-body d-flex align-items-center tamaño-texto">
+            <div className="flex-grow-1 flex-container d-flex align-items-center justify-content-between">
+                <div className='flex-item'>{icono}</div>
+                <p className='flex-item m-0'>{eventos}<sub>/{periodo}</sub></p>
+                <p className='flex-item m-0'>{detalles}</p>
             </div>
-            <div className="flex-grow-1 text-end">
-                <p>4 de 5</p>
-                <div>
-                    <div></div>
+            <div className="flex-grow-1 flex-container text-end d-flex align-items-center justify-content-end">
+            <div class="progress-container">
+                <span class="progress-text">{completado} de {meta}</span>
+                <div class="progress" style={{height: '5px'}}>
+                    <div className="progress-bar" style={{width: `${porcentaje}%`}}>
+                    </div>
                 </div>
-                <button>Completado</button>
             </div>
+                <button type="button" className="btn-small" >Completado</button>
+            </div>
+        </div>
+
         </div>
     );
 }

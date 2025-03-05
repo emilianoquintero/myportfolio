@@ -1,4 +1,3 @@
-import React, { useState } from 'react';
 import App from './App';
 import './BackgroundAnimated.css';
 
