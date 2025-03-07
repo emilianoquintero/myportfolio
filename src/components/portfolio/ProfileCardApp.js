@@ -49,10 +49,10 @@ function ProfileCardApp() {
                 <TypingAnimation></TypingAnimation>
                 </div>
                 <div className='Profile-social'>
-                    <a href='/' className=''><i class="bi bi-git"></i></a>
-                    <a href='/'><i class="bi bi-stack-overflow"></i></a>
-                    <a href='/'><i class="bi bi-linkedin"></i></a>
-                    <a href='/'><i class="bi bi-spotify"></i></a>
+                    <a href='/' className=''><i className="bi bi-git"></i></a>
+                    <a href='/'><i className="bi bi-stack-overflow"></i></a>
+                    <a href='/'><i className="bi bi-linkedin"></i></a>
+                    <a href='/'><i className="bi bi-spotify"></i></a>
                 </div>
                 <div className='Profile-card-bottoms lnks'>
                     <a className='_lnks' href='/'>Downaldoad CV</a>

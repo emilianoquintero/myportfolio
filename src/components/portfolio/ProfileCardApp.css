@@ -22,7 +22,7 @@
 
 .Profile-photo {
     border-radius: 30px;
-    background-image: url('ProfileImg.jpg');
+    background-image: url('../../../public/img/ProfileImg.jpg');
     position: absolute;
     overflow: hidden;
     left: 0;

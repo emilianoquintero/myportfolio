@@ -1,0 +1,46 @@
+.conteiner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centra horizontalmente */
+    align-content: center;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+}
+
+.background-img {
+    display: flex;
+    justify-content: center;  /* Centra horizontalmente */
+    align-items: center;     /* Centra verticalmente */
+    height: 150px;           /* Altura del contenedor */
+    width: 100%;            /* Anchura del contenedor */
+    background-image: url('../../../../public/img/workimg1.jpg'); /* Ruta de la imagen de fondo */
+    background-size: cover;  /* Ajusta el tamaño de la imagen al contenedor */
+    background-position: center; /* Centra la imagen en el contenedor */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    background-size: contain;  /* La imagen se ajusta para caber en el contenedor */
+    background-position: center; /* Centra la imagen en el contenedor */
+    background-repeat: no-repeat;
+}
+
+.overlay {
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);  /* Fondo oscuro semitransparente */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;  /* Comienza invisible */
+    transition: 0.3s ease;  /* Transición suave para el efecto hover */
+    cursor: pointer;  /* Hace que el cursor se convierta en una manita */
+}
+
+.background-img:hover  {
+    filter: brightness(50%);  /* Oscurece la imagen */
+}
+
+.background-img:hover .overlay {
+    opacity: 1;        /* Muestra el overlay */
+}

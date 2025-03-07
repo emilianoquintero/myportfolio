@@ -11,9 +11,9 @@ function Metas({ icono, eventos, periodo, detalles, meta, completado}) {
                 <p className='flex-item m-0'>{detalles}</p>
             </div>
             <div className="flex-grow-1 flex-container text-end d-flex align-items-center justify-content-end">
-            <div class="progress-container">
-                <span class="progress-text">{completado} de {meta}</span>
-                <div class="progress" style={{height: '5px'}}>
+            <div className="progress-container">
+                <span clclassNameass="progress-text">{completado} de {meta}</span>
+                <div className="progress" style={{height: '5px'}}>
                     <div className="progress-bar" style={{width: `${porcentaje}%`}}>
                     </div>
                 </div>

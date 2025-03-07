@@ -18,19 +18,19 @@ function MenuApp( { setActiveDivId } ) {
               <span className="tooltip-text">ABOUT</span>
             </li>
             <li onClick={() => setActiveDivId('Resume')} className='custom-tooltip'>
-              <i class="bi bi-file-earmark-person-fill"></i>
+              <i className="bi bi-file-earmark-person-fill"></i>
               <span className="tooltip-text">RESUME</span>
             </li>
             <li onClick={() => setActiveDivId('Works')} className='custom-tooltip'>
-              <i class="bi bi-card-checklist"></i>
+              <i className="bi bi-card-checklist"></i>
               <span className="tooltip-text">WORKS</span>
             </li>
             <li onClick={() => setActiveDivId('Blog')} className='custom-tooltip'>
-              <i class="bi bi-window-stack"></i>
+              <i className="bi bi-window-stack"></i>
               <span className="tooltip-text">BLOG</span>
             </li>
             <li onClick={() => setActiveDivId('Contact')} className='custom-tooltip'>
-              <i class="bi bi-envelope-fill"></i>
+              <i className="bi bi-envelope-fill"></i>
               <span className="tooltip-text">CONTACT</span>
             </li>
           </ul>

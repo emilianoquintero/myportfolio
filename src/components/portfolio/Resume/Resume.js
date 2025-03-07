@@ -55,11 +55,11 @@ function Resume () {
                 <div className='row'>
                     <div className='col'>
                         <div className="Title p-3">
-                            <i class="bi bi-briefcase-fill me-2 icon-design"> </i> 
+                            <i className="bi bi-briefcase-fill me-2 icon-design"> </i> 
                             Experience
                         </div>
                         {experience.map((option, index)=>(
-                            <div className='content-resume p-3'>
+                            <div className='content-resume p-3' key={index}>
                                 <div className={option.style}>{option.date}</div>
                                 <div className='title-ee'>{option.name}</div>
                                 <div className='description-ee'>{option.place}</div>
@@ -70,11 +70,11 @@ function Resume () {
                     </div>
                     <div className='col'>
                         <div className="Title p-3">
-                        <i class="bi bi-bank2 me-2 icon-design"> </i>
+                        <i className="bi bi-bank2 me-2 icon-design"> </i>
                             Education
                         </div>
                         {education.map((option, index)=>(
-                            <div className='content-resume p-3'>
+                            <div className='content-resume p-3' key={index}>
                                 <div className={option.style}>{option.date}</div>
                                 <div className='title-ee'>{option.name}</div>
                                 <div className='description-ee'>{option.place}</div>
@@ -92,7 +92,7 @@ function Resume () {
                 <div className='row'>
                     <div className='col-6'>
                         <div className="Title p-3">
-                            <i class="bi bi-code-slash me-2 icon-design"> </i> 
+                            <i className="bi bi-code-slash me-2 icon-design"> </i> 
                             Coding
                         </div>
                         <div className='content-resume p-3'>
@@ -108,7 +108,7 @@ function Resume () {
                     </div>
                     <div className='col-6'>
                         <div className="Title p-3">
-                        <i class="bi bi-book-fill me-2 icon-design"> </i>
+                        <i className="bi bi-book-fill me-2 icon-design"> </i>
                             Frameworks
                         </div>
                         <div className='content-resume p-3'>
@@ -124,7 +124,7 @@ function Resume () {
                     </div>
                     <div className='col-6'>
                         <div className="Title p-3">
-                        <i class="bi bi-bookmarks-fill me-2 icon-design"> </i>
+                        <i className="bi bi-bookmarks-fill me-2 icon-design"> </i>
                             Knowledge
                         </div>
                         <div className='content-resume p-3'>
@@ -138,7 +138,7 @@ function Resume () {
                     </div> 
                     <div className='col-6'>
                         <div className="Title p-3">
-                        <i class="bi bi-flag-fill me-2 icon-design"> </i>
+                        <i className="bi bi-flag-fill me-2 icon-design"> </i>
                             Lenguages
                         </div>
                         <div className='content-resume p-3'>

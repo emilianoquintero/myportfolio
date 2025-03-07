@@ -17,11 +17,11 @@ function InfoCardApp( {activeDivId} ) {
           <Resume></Resume>
         </div>
         <div id='Works' className={`Card-inner Animated active ${activeDivId === 'Works' ? 'FadeInLeft' : 'FadeOutLeft'}`}>
-          <Experience></Experience>
+          <Works></Works>
         
         </div>
         <div id='Apps' className={`Card-inner Animated active ${activeDivId === 'Blog' ? 'FadeInLeft' : 'FadeOutLeft'}`}>
-          <Works></Works>
+          <Experience></Experience>
         </div>
         <div id='Contact' className={`Card-inner Animated active ${activeDivId === 'Contact' ? 'FadeInLeft' : 'FadeOutLeft'}`}>
           <Contact></Contact>

@@ -47,7 +47,7 @@ function About () {
                 <div className='row'>
                     <div className='col-6'>
                         <div className="p-3 text-box center-info">
-                            <i class="bi bi-code-slash icon-design"></i>
+                            <i className="bi bi-code-slash icon-design"></i>
                             <strong>
                                 Coding
                             </strong>
@@ -58,7 +58,7 @@ function About () {
                     </div>
                     <div className='col-6'>
                         <div className="p-3 text-box center-info">
-                            <i class="bi bi-music-note-beamed icon-design"></i>
+                            <i className="bi bi-music-note-beamed icon-design"></i>
                             <strong>
                                 Music
                             </strong>
@@ -69,7 +69,7 @@ function About () {
                     </div>
                     <div className='col-6'>
                         <div className="p-3 text-box center-info">
-                            <i class="bi bi-controller icon-design"></i>
+                            <i className="bi bi-controller icon-design"></i>
                             <strong>
                                 Gaming
                             </strong>
@@ -80,7 +80,7 @@ function About () {
                     </div>
                     <div className='col-6'>
                         <div className="p-3 text-box center-info">
-                            <i class="bi bi-book-fill icon-design"></i>
+                            <i className="bi bi-book-fill icon-design"></i>
                             <strong>
                                 Lecture
                             </strong>
