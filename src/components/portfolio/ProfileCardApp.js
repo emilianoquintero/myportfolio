@@ -45,7 +45,9 @@ function ProfileCardApp() {
                 <div className='Profile-name'>
                     Emiliano Quintero Beltran
                 </div>
+                <div>
                 <TypingAnimation></TypingAnimation>
+                </div>
                 <div className='Profile-social'>
                     <a href='/' className=''><i class="bi bi-git"></i></a>
                     <a href='/'><i class="bi bi-stack-overflow"></i></a>

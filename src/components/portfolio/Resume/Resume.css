@@ -1,0 +1,62 @@
+.content-resume {
+    display: flex;
+    flex-direction: column;
+    min-height: 10em;
+}
+
+.date-current {
+    width: 50%;
+    height: 25px;
+    font-size: 15px;
+    border-width: 2px;
+    border-radius: 7.5px;
+    margin-bottom: 5px;
+    border-style: solid;
+    text-align: center;
+    color: aqua;
+    border-color: aqua;
+}
+
+.date-not {
+    width: 50%;
+    height: 25px;
+    border-width: 2px;
+    border-radius: 7.5px;
+    margin-bottom: 5px;
+    font-size: 15px;
+    border-style: solid;
+    text-align: center;
+    color: rgb(34, 34, 34);
+    border-color: rgb(29, 29, 29);
+}
+
+.title-ee {
+    font-size: 20px;
+}
+
+.description-ee {
+    font-size: 15px;
+    color: rgb(34, 34, 34);
+    margin-bottom: 7.5px;
+}
+
+.progress-container {
+    text-align: left; /* Alinea el texto horizontalmente al centro */
+    width: 100%;
+    margin-bottom: 2px;
+}
+
+.progress-label {
+    font-size: 18px;
+    width: 100%;
+}
+
+.horizontal-align {
+    display: flex;
+    align-items: center; /* Alinea verticalmente al centro */
+    height: 30px;
+}
+
+.text-kn {
+
+}
