@@ -2,6 +2,20 @@
 @tailwind components;
 @tailwind utilities;
 
+
+:root {
+  --color-primario: #5efaff;
+  --color-secundario: rgba(255, 255, 255, 0.55);
+  --color-fondo: #191919;
+  --color-fuente: rgb(255, 255, 255);
+  --color-fuente-primario: rgba(255, 255, 255, 0.85);
+  --color-fuente-secundario:rgba(255, 255, 255, 0.55);
+  --bordes: 30px;
+  --font-size-titles: 20px;
+  --font-size-subtitles: 17px;
+  --font-size-text: 14px;
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -18,9 +32,8 @@ code {
     monospace;
 }
 
-.big-shoulders-stencil {
-  font-family: "Big Shoulders Stencil", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 10;
+.poppins-regular {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
   font-style: normal;
 }

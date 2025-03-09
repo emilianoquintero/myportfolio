@@ -1,3 +1,8 @@
+.background-inf {
+    background-color:#5efaff5b;
+    border-radius: 3px;
+}
+
 .info-list {
     list-style-type: none;
 }
@@ -15,28 +20,3 @@ li {
 }
 
 
-
-.j-text {
-    text-align: justify;
-}
-
-::-webkit-scrollbar {
-    width: 12px; /* Ancho de la barra de desplazamiento vertical */
-    height: 12px; /* Altura de la barra de desplazamiento horizontal */
-}
-
-/* Estilo para la parte interior de la barra de desplazamiento */
-::-webkit-scrollbar-track {
-    background: #f1f1f1; /* Color del fondo de la pista de la barra de desplazamiento */
-}
-
-/* Estilo para la parte que se mueve de la barra de desplazamiento */
-::-webkit-scrollbar-thumb {
-    background: #888; /* Color de la parte que se mueve */
-    border-radius: 6px; /* Radio de borde para que sea redondeado */
-}
-
-/* Estilo para la parte que se mueve cuando se pasa el cursor por encima */
-::-webkit-scrollbar-thumb:hover {
-    background: #555; /* Color al pasar el cursor por encima */
-}

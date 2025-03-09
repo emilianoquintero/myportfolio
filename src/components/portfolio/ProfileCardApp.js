@@ -46,17 +46,17 @@ function ProfileCardApp() {
                     Emiliano Quintero Beltran
                 </div>
                 <div>
-                <TypingAnimation></TypingAnimation>
+                    <TypingAnimation></TypingAnimation>
                 </div>
                 <div className='Profile-social'>
                     <a href='/' className=''><i className="bi bi-git"></i></a>
-                    <a href='/'><i className="bi bi-stack-overflow"></i></a>
+                    <a href='/'><i class="bi bi-whatsapp"></i></a>
                     <a href='/'><i className="bi bi-linkedin"></i></a>
                     <a href='/'><i className="bi bi-spotify"></i></a>
                 </div>
-                <div className='Profile-card-bottoms lnks'>
-                    <a className='_lnks' href='/'>Downaldoad CV</a>
-                    <a href='/'>Contact Me</a>
+                <div className='Profile-card-bottoms lnks text'>
+                    <a className='_lnks' href='/doc/EmilianoQuintero_Resume.pdf' download="resume-emilianoquintero">Downaldoad CV <i class="bi bi-cloud-download-fill"></i></a>
+                    <a className='_lnks' href='/'>Contact Me <i class="bi bi-send-fill"></i></a>
                 </div>
             </div>
         </div>

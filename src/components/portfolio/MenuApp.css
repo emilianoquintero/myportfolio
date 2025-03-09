@@ -8,11 +8,12 @@
     display: flex;
     justify-content: center; 
     align-items: center;    
-    background-color: #191919;
+    background-color: var(--color-fondo);
     width: 2.5em;
     height: 2.5em;
     font-size: 2em;
-    border-radius: 30px;
+    border-radius: var(--bordes);
+    color: var(--color-fuente);
 }
   
 .list-menu { 
@@ -20,15 +21,16 @@
     display: flex;
     justify-content: center; 
     align-items: center;   
-    background-color: #191919; 
+    background-color: var(--color-fondo); 
     padding: 0%;
     width: 5em;
     margin-top: 25%;
-    border-radius: 30px;
+    border-radius: var(--bordes);
 }
 
 .list-menu ul {
     font-size: 20px;
+    color: var(--color-fuente);
     list-style-type: none; /* Elimina los puntos de las listas */
     padding: 0;
     margin: 0;
@@ -37,10 +39,10 @@
 }
 
 .custom-tooltip .tooltip-text {
-    background-color:  rgba(21, 20, 20, 0.822);
+    background-color:  var(--color-primario);
     visibility: hidden;
     width: 0;
-    color: #fff;
+    color: black;
     text-align: center;
     border-radius: 20px;
     padding: 5px 5px;
@@ -53,8 +55,8 @@
     transition: opacity 0.3s, width 0.3s;
     white-space: nowrap;
     overflow: hidden;
-    font-size: 15px;
-    font-weight: bold;
+    font-size: 10px;
+    letter-spacing: 1px;
   }
   
   .custom-tooltip:hover .tooltip-text {

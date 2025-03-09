@@ -9,6 +9,6 @@
 }
 
 .sin-estilo-enlace {
-    color: inherit; /* Hereda el color del elemento padre */
+    color: aliceblue; /* Hereda el color del elemento padre */
     text-decoration: none; /* Quita el subrayado */
 }

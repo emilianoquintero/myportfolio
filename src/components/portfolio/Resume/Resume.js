@@ -18,6 +18,7 @@ function Resume () {
         { name: 'HTML/CSS', width: '75%' },
         { name: 'Java', width: '50%' },
         { name: 'PHP', width: '50%' },
+        { name: 'C/C++', width: '50%' },
         { name: 'PHYTON', width: '50%' },
         { name: 'SQL', width: '50%' },
     ];
@@ -61,9 +62,9 @@ function Resume () {
                         {experience.map((option, index)=>(
                             <div className='content-resume p-3' key={index}>
                                 <div className={option.style}>{option.date}</div>
-                                <div className='title-ee'>{option.name}</div>
-                                <div className='description-ee'>{option.place}</div>
-                            <div className='description-ee'>{option.description}</div>
+                                <strong className='subtitles'>{option.name}</strong>
+                                <div className='text'>{option.place}</div>
+                            <div className='text'>{option.description}</div>
 
                         </div>
                         ))}
@@ -76,9 +77,9 @@ function Resume () {
                         {education.map((option, index)=>(
                             <div className='content-resume p-3' key={index}>
                                 <div className={option.style}>{option.date}</div>
-                                <div className='title-ee'>{option.name}</div>
-                                <div className='description-ee'>{option.place}</div>
-                            <div className='description-ee'>{option.description}</div>
+                                <strong className='subtitles'>{option.name}</strong>
+                                <div className='text'>{option.place}</div>
+                            <div className='text'>{option.description}</div>
                         </div>
                         ))}
                     </div>
@@ -98,7 +99,7 @@ function Resume () {
                         <div className='content-resume p-3'>
                             {skills.map((skill, index) => (
                                 <div className='progress-container' key={index}>
-                                    <div className='progress-label'>{skill.name}</div>
+                                    <div className='text'>{skill.name}</div>
                                     <div className="progress" role="progressbar" aria-label="Animated striped example" aria-valuenow={parseInt(skill.width)} aria-valuemin="0" aria-valuemax="100" style={{height: '5px'}}>
                                         <div className="progress-bar progress-bar-striped progress-bar-animated" style={{width: skill.width}}></div>
                                     </div>
@@ -114,7 +115,7 @@ function Resume () {
                         <div className='content-resume p-3'>
                             {frameworks.map((skill, index) => (
                                 <div className='progress-container' key={index}>
-                                    <div className='progress-label'>{skill.name}</div>
+                                    <div className='text'>{skill.name}</div>
                                     <div className="progress" role="progressbar" aria-label="Animated striped example" aria-valuenow={parseInt(skill.width)} aria-valuemin="0" aria-valuemax="100" style={{height: '5px'}}>
                                         <div className="progress-bar progress-bar-striped progress-bar-animated" style={{width: skill.width}}></div>
                                     </div>
@@ -131,7 +132,7 @@ function Resume () {
                             {arrayKnowledge.map((item, index) => (
                                 <div className='horizontal-align' key={index}>
                                     <i className="bi bi-check icon-design"></i>
-                                    <p className='m-0'>{item}</p>
+                                    <p className='m-0 text'>{item}</p>
                                 </div>
                             ))}
                         </div>
@@ -144,7 +145,7 @@ function Resume () {
                         <div className='content-resume p-3'>
                             {lenguages.map((skill, index) => (
                                 <div className='progress-container' key={index}>
-                                    <div className='progress-label'>{skill.name}</div>
+                                    <div className='text'>{skill.name}</div>
                                     <div className="progress" role="progressbar" aria-label="Animated striped example" aria-valuenow={parseInt(skill.width)} aria-valuemin="0" aria-valuemax="100" style={{height: '5px'}}>
                                         <div className="progress-bar progress-bar-striped progress-bar-animated" style={{width: skill.width}}></div>
                                     </div>

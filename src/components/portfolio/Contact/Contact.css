@@ -1,0 +1,41 @@
+.map-div{
+    height: 500px;
+    width: 100%
+}
+
+.contact-info {
+    display: flex;
+    justify-content: space-between;
+}
+
+.button-form{
+    background: none;
+    border: none;
+    padding: 0;
+    margin: 0;
+    font: inherit; /* Hereda el estilo del texto */
+    color: aliceblue; /* Hereda el color del texto */
+    cursor: pointer; /* Opcional, muestra el puntero de clic */
+    font-size: var(--font-size-text);
+}
+
+.button-form:hover {
+    color: var(--color-primario);
+    transition: color 0.3s ease; /* Transición de color lenta */
+}
+
+.input-form {
+    width: 100%;
+    background-color: transparent; /* Fondo del input */
+    border: 2px solid var(--color-secundario); /* Borde del input */
+    border-radius: 5px; /* Bordes redondeados */
+    padding: 10px; /* Espaciado interno */
+    color: var(--color-secundario); /* Color del texto */
+    font-size: 16px; /* Tamaño de la fuente */
+}
+
+.input-formput:focus {
+    background-color: #e0e0e0; /* Fondo del input cuando está enfocado */
+    border-color: #0056b3; /* Color del borde cuando está enfocado */
+    outline: none; /* Eliminar el contorno del navegador por defecto */
+  }
