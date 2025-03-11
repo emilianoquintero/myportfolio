@@ -70,14 +70,16 @@ function ProfileCardApp( { setActiveDivId } ) {
                 <div className='Profile-social'>
                     {
                         socialOption.map((option, index)=>(
+                        <div key={index}>    
                             
-                        <a href={option.link} target="_blank" rel="noopener noreferrer"><i className={option.icon}></i></a>
+                        <a  href={option.link} target="_blank" rel="noopener noreferrer"><i className={option.icon}></i></a>
+                        </div>
                         
                     ))}
                 </div>
                 <div className='Profile-card-bottoms lnks text'>
-                    <a className='_lnks' href='/doc/EmilianoQuintero_Resume.pdf' download="resume-emilianoquintero">Downaldoad CV <i class="bi bi-cloud-download-fill"></i></a>
-                    <a className='_lnks' onClick={() => setActiveDivId('Contact')}>Contact Me <i class="bi bi-send-fill"></i></a>
+                    <a className='_lnks' href='/doc/EmilianoQuintero_Resume.pdf' download="resume-emilianoquintero">Downaldoad CV <i className="bi bi-cloud-download-fill"></i></a>
+                    <a className='_lnks' onClick={() => setActiveDivId('Contact')}>Contact Me <i className="bi bi-send-fill"></i></a>
                 </div>
             </div>
         </div>

@@ -4,39 +4,39 @@ function Experience () {
 
     const techno = [
         {
-            route: '/img/technologies/azure.svg',
+            route: `${process.env.PUBLIC_URL}/img/technologies/azure.svg`,
             description: 'azure'
         },
         {
-            route: '/img/technologies/git.svg',
+            route: '/resume-gh-pages/img/technologies/git.svg',
             description: 'git'
         },
         {
-            route: '/img/technologies/graphql.svg',
+            route: '/resume-gh-pages/img/technologies/graphql.svg',
             description: 'graphql'
         },
         {
-            route: '/img/technologies/html-5.svg',
+            route: '/resume-gh-pages/img/technologies/html-5.svg',
             description: 'html-5'
         },
         {
-            route: '/img/technologies/mysql.svg',
+            route: '/resume-gh-pages/img/technologies/mysql.svg',
             description: 'mysql'
         },
         {
-            route: '/img/technologies/node-js.svg',
+            route: '/resume-gh-pages/img/technologies/node-js.svg',
             description: 'node-js'
         },
         {
-            route: '/img/technologies/postman.svg',
+            route: '/resume-gh-pages/img/technologies/postman.svg',
             description: 'postman'
         },
         {
-            route: '/img/technologies/react.svg',
+            route: '/resume-gh-pages/img/technologies/react.svg',
             description: 'react'
         },
         {
-            route: '/img/technologies/vscode.svg',
+            route: '/resume-gh-pages/img/technologies/vscode.svg',
             description: 'vscode'
         }
     ]
