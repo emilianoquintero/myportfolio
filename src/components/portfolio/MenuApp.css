@@ -4,6 +4,66 @@
     float: left;
 }
 
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: -250px; /* Comienza escondida */
+  width: 200px;
+  height: 100%;
+  background-color: var(--color-fondo);
+  color: var(--color-fuente);
+  transition: left 0.3s ease;
+  padding-top: 60px;
+  border-top-right-radius: var(--bordes);
+  border-bottom-right-radius: var(--bordes);
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* Fondo semitransparente */
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+  z-index: 1; /* Asegura que la superposición esté encima del contenido */
+}
+
+.sidebar.open {
+  left: 0; /* Aparece en la pantalla */
+}
+
+.sidebar nav ul li {
+  cursor: pointer;
+}
+
+.sidebar-title{
+  font-size: var(--font-size-subtitles);
+  font-weight: bold;
+}
+
+.sidebar-subtitles{
+  font-size: var(--font-size-text);
+}
+
+.close-btn{
+  padding: 10px;
+  margin: 10px auto;
+  cursor: pointer;
+  background-color: #f44336;
+  color: white;
+  border-radius: var(--bordes);
+  width: 150px;
+  height: 35px;
+  align-self: flex-end;
+}
+
 .button-menu {
     display: flex;
     justify-content: center; 
@@ -38,6 +98,10 @@
     cursor: pointer; /* Cambia el cursor a un puntero (como un botón) */
 }
 
+.active i {
+  color: var(--color-primario); /* Cambia este color al que desees */
+}
+
 .custom-tooltip .tooltip-text {
     background-color:  var(--color-primario);
     visibility: hidden;
@@ -57,6 +121,8 @@
     overflow: hidden;
     font-size: 10px;
     letter-spacing: 1px;
+    text-transform: uppercase;
+    font-weight: bolder;
   }
   
   .custom-tooltip:hover .tooltip-text {

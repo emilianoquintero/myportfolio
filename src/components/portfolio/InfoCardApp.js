@@ -16,12 +16,12 @@ function InfoCardApp( {activeDivId} ) {
         <div id='Resume' className={`Card-inner Animated active ${activeDivId === 'Resume' ? 'FadeInLeft' : 'FadeOutLeft'}`}>
           <Resume></Resume>
         </div>
+        <div id='Apps' className={`Card-inner Animated active ${activeDivId === 'Technologies' ? 'FadeInLeft' : 'FadeOutLeft'}`}>
+          <Experience></Experience>
+        </div>
         <div id='Works' className={`Card-inner Animated active ${activeDivId === 'Works' ? 'FadeInLeft' : 'FadeOutLeft'}`}>
           <Works></Works>
         
-        </div>
-        <div id='Apps' className={`Card-inner Animated active ${activeDivId === 'Blog' ? 'FadeInLeft' : 'FadeOutLeft'}`}>
-          <Experience></Experience>
         </div>
         <div id='Contact' className={`Card-inner Animated active ${activeDivId === 'Contact' ? 'FadeInLeft' : 'FadeOutLeft'}`}>
           <Contact></Contact>

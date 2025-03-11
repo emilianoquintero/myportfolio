@@ -1,0 +1,14 @@
+
+
+.svg-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 11em; /* Ajusta según sea necesario */
+    height: 10em; /* Ajusta según sea necesario */
+}
+
+.svg-size {
+    width: 100px; /* Ajusta el tamaño según tus necesidades */
+    height: 100px; /* Ajusta el tamaño según tus necesidades */
+}

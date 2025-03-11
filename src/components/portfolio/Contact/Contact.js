@@ -14,7 +14,7 @@ function Contact () {
         },
         {
             option: 'Phone',
-            name: '66 71 06 46 58'
+            name: '+52 6671064658'
         },
         {
             option: 'Freelancer',
@@ -39,7 +39,7 @@ function Contact () {
       }
     return (
         
-        <div className='Card-inner-content-about'>
+        <div id='contact-container' className='Card-inner-content-about'>
                 <div className='Title p-3'>
                     <span className='First-word'>G</span>
                         et in Touch
@@ -53,7 +53,7 @@ function Contact () {
                                 {
                                     contactInfo.map((option, index)=> (
                                         <div className='col-6 contact-info text' key={index}>
-                                            <strong>{option.option}</strong>
+                                            <strong className='background-inf'>{option.option}</strong>
                                             <div>{option.name}</div>
                                         </div>
                                     ))
@@ -63,27 +63,28 @@ function Contact () {
                         <div className='col-12'>
                     </div>
                 </div>
-                <div className='Title p-3'>
+                <div  className='Title p-3'>
                     <span className='First-word'>C</span>
                         ontact Form
                 </div>
                 <div className='row p-3'>
                     <form
+                        id='Form-container'
                         action="https://formspree.io/f/mldjrzgp"
                         method="POST"
                         className='w-100'
                         >
                             <div className='row'>
                                 <div className='col-12 col-md-6 mb-3'>
-                                <input placeholder='Your Name' type="text" name="name" className='input-form'></input>
+                                <input placeholder='Your Name' type="text" name="name" className='input-form' required></input>
                             </div>
                             <div className='col-12 col-md-6 mb-3'>
-                                <input placeholder='Your Email' type="email" name="email" className='input-form'></input>
+                                <input placeholder='Your Email' type="email" name="email" className='input-form' required></input>
                             </div>
                             </div>
                             
                             <div className='col-12 mb-3'>
-                                <textarea placeholder='Your Message' name="message" className='input-form'></textarea>
+                                <textarea placeholder='Your Message' name="message" className='input-form' required></textarea>
                             </div>
                         
                         

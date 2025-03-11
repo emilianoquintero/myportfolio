@@ -21,15 +21,15 @@ function About () {
                             <div className='info-list'>
                                 <ul className='info-list text'>
                                     <li className=''>
-                                        <strong>Age . . . . </strong>
-                                        24
+                                        <strong className='background-inf'>Age . . . . </strong>
+                                        27
                                     </li>
                                     <li>
                                         <strong className='background-inf'>Residence . . . . </strong>
                                         MX
                                     </li>
                                     <li>
-                                        <strong>Address . . . . </strong>
+                                        <strong className='background-inf'>Address . . . . </strong>
                                         Sin, MX
                                     </li>
                                 </ul>
@@ -91,7 +91,7 @@ function About () {
                     </div>
                 </div>
             </div>
-            <div className='content'>
+            <div id='Quote' className='content'>
                 <div className='Title p-3'>
                     <span className='First-word'>Favorite </span>
                         Quote

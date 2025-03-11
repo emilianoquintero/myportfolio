@@ -5,9 +5,9 @@ function Resume () {
     const arrayKnowledge = [
         'Git and GitHub workflows',
         'RESTful API development', 
-        'Front-end development',
-        'MySQL and PostgreSQL',
+        'Front/Back-end development',
         'Node.js development',
+        'SQL Database Management',
         'UI/UX Design',
         'Web Hosting',
     ];
@@ -107,6 +107,21 @@ function Resume () {
                             ))}
                         </div>
                     </div>
+                    
+                    <div className='col-6'>
+                        <div className="Title p-3">
+                        <i className="bi bi-bookmarks-fill me-2 icon-design"> </i>
+                            Knowledge
+                        </div>
+                        <div className='content-resume p-3'>
+                            {arrayKnowledge.map((item, index) => (
+                                <div className='horizontal-align pt-3' key={index}>
+                                    <i className="bi bi-check icon-check"></i>
+                                    <p className='m-0 text'>{item}</p>
+                                </div>
+                            ))}
+                        </div>
+                    </div> 
                     <div className='col-6'>
                         <div className="Title p-3">
                         <i className="bi bi-book-fill me-2 icon-design"> </i>
@@ -123,20 +138,6 @@ function Resume () {
                             ))}
                         </div>
                     </div>
-                    <div className='col-6'>
-                        <div className="Title p-3">
-                        <i className="bi bi-bookmarks-fill me-2 icon-design"> </i>
-                            Knowledge
-                        </div>
-                        <div className='content-resume p-3'>
-                            {arrayKnowledge.map((item, index) => (
-                                <div className='horizontal-align' key={index}>
-                                    <i className="bi bi-check icon-design"></i>
-                                    <p className='m-0 text'>{item}</p>
-                                </div>
-                            ))}
-                        </div>
-                    </div> 
                     <div className='col-6'>
                         <div className="Title p-3">
                         <i className="bi bi-flag-fill me-2 icon-design"> </i>

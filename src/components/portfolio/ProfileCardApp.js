@@ -1,6 +1,25 @@
 import './ProfileCardApp.css';
 import React, { useState, useEffect } from 'react';
 
+const socialOption = [
+    {
+        icon: 'bi bi-github',
+        link: 'https://github.com/'
+    },
+    {
+        icon: 'bi bi-linkedin',
+        link: 'https://www.linkedin.com/'
+    },
+    {
+        icon: 'bi bi-whatsapp',
+        link: 'https://wa.me/5216671064658?text=Hola%20quiero%20m%C3%A1s%20informaci%C3%B3n'
+    },
+    {
+        icon: 'bi bi-spotify',
+        link: 'https://open.spotify.com/playlist/37i9dQZF1ELVTfo1sS2l8z?si=0e17a7312bc34f46'
+    },
+]
+
 const TypingAnimation = () => {
     const [text, setText] = useState('');
     const phrases = ['DEVELOPER', 'FULL-STACK', 'FREELANCER'];
@@ -37,7 +56,7 @@ const TypingAnimation = () => {
     return <div className='Profile-title'>[ {text} ]</div>;
 };
 
-function ProfileCardApp() {
+function ProfileCardApp( { setActiveDivId } ) {
     return (
         <div className='Profile-card'>
             <div className='Profile-card-align'>
@@ -49,14 +68,16 @@ function ProfileCardApp() {
                     <TypingAnimation></TypingAnimation>
                 </div>
                 <div className='Profile-social'>
-                    <a href='/' className=''><i className="bi bi-git"></i></a>
-                    <a href='/'><i class="bi bi-whatsapp"></i></a>
-                    <a href='/'><i className="bi bi-linkedin"></i></a>
-                    <a href='/'><i className="bi bi-spotify"></i></a>
+                    {
+                        socialOption.map((option, index)=>(
+                            
+                        <a href={option.link} target="_blank" rel="noopener noreferrer"><i className={option.icon}></i></a>
+                        
+                    ))}
                 </div>
                 <div className='Profile-card-bottoms lnks text'>
                     <a className='_lnks' href='/doc/EmilianoQuintero_Resume.pdf' download="resume-emilianoquintero">Downaldoad CV <i class="bi bi-cloud-download-fill"></i></a>
-                    <a className='_lnks' href='/'>Contact Me <i class="bi bi-send-fill"></i></a>
+                    <a className='_lnks' onClick={() => setActiveDivId('Contact')}>Contact Me <i class="bi bi-send-fill"></i></a>
                 </div>
             </div>
         </div>

@@ -8,14 +8,21 @@
     justify-content: space-between;
 }
 
+.background-inf {
+    background-color:  var(--color-primario);
+    border-radius: 3px;
+    color: black;
+    width: 45%;
+    margin-bottom: 5px;
+}
+
 .button-form{
     background: none;
     border: none;
     padding: 0;
     margin: 0;
-    font: inherit; /* Hereda el estilo del texto */
+    font-weight: bolder;
     color: aliceblue; /* Hereda el color del texto */
-    cursor: pointer; /* Opcional, muestra el puntero de clic */
     font-size: var(--font-size-text);
 }
 

@@ -1,6 +1,8 @@
 .background-inf {
-    background-color:#5efaff5b;
+    background-color:  var(--color-primario);
     border-radius: 3px;
+    color: black;
+    width: 60%;
 }
 
 .info-list {
