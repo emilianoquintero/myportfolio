@@ -21,4 +21,17 @@ li {
     align-items: center;
 }
 
+@media (max-width: 950px) {
+    .col {
+
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+
+    .info-list {
+        padding-left: 0%;
+        list-style-type: none;
+    }
+}
+
 

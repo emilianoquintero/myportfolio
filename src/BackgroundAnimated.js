@@ -2,9 +2,16 @@ import App from './App';
 import './BackgroundAnimated.css';
 
 function BackgroundAnimation() {
-    var canvas = document.createElement("canvas");
+var canvas = document.createElement("canvas");
+var existingCanvas = document.querySelector("canvas");
+if (!existingCanvas) {
+  var canvas = document.createElement("canvas");
+  document.body.appendChild(canvas);
+} else {
+  var canvas = existingCanvas;
+}
 var width = canvas.width = window.innerWidth * 1;
-var height = canvas.height = window.innerHeight * 1;
+var height = canvas.height = 750 * 1;
 document.body.appendChild(canvas);
 var gl = canvas.getContext('webgl');
 
@@ -100,6 +107,7 @@ var metaballsHandle = getUniformLocation(program, 'metaballs');
 
 loop();
 function loop() {
+  
   for (var i = 0; i < numMetaballs; i++) {
     var metaball = metaballs[i];
     metaball.x += metaball.vx;

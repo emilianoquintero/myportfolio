@@ -2,8 +2,20 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    
     position: absolute;
     width: 100vw;
     height: 100vh;
   }
+
+@media (max-width: 950px) {
+  .costum-container {
+    display: block; /* Elimina el espacio en blanco por defecto */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 200vh;
+    max-height: 100vh
+  }
+  
+}

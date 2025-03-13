@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import './MenuApp.css';
 
 function MenuApp( { setActiveDivId } ) {
@@ -41,10 +41,30 @@ function MenuApp( { setActiveDivId } ) {
     setActiveDivId(divIcon);
     setActiveIcon(divIcon);
   };
+  
+  useEffect(() => {
+    var lastScrollTop = 0;
+    var menuHeader = document.querySelector(".menu-header");
+
+    const handleScroll = () => {
+      var currentScroll = window.pageYOffset || document.documentElement.scrollTop;
+
+      if (currentScroll > lastScrollTop) {
+        menuHeader.classList.add("hidden");
+      } else {
+        menuHeader.classList.remove("hidden");
+      }
+
+      lastScrollTop = currentScroll <= 0 ? 0 : currentScroll;
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
 
   return (
     <>
-      <header className='menu-header'>
+      <div className='menu-header'>
         <a>
           <p type='button' className='button-menu' onClick={toggleSidebar}>☰</p>
         </a>
@@ -59,7 +79,7 @@ function MenuApp( { setActiveDivId } ) {
             ))}
           </ul>
         </div>
-      </header>
+      </div>
       <div className="">
         <div className={`sidebar ${isSidebarOpen ? 'open' : 'closed'}`}>
           <nav>
@@ -85,9 +105,9 @@ function MenuApp( { setActiveDivId } ) {
             </ul>
           </nav>
           
-          <button className='close-btn' onClick={toggleSidebar}>X</button>
-        </div>
-    </div>
+            <button className='close-btn' onClick={toggleSidebar}>X</button>
+          </div>
+      </div>
     </>
       
       

@@ -52,7 +52,7 @@ function About () {
                                 Coding
                             </strong>
                             <p className='text'>
-                                I enjoy creating code because I always learn new things. More importantly, I love seeing how what I create with code.
+                                I enjoy creating code and discovering new tools or technologies along the way. I love testing the interfaces or modifications I 
                             </p>
                         </div>
                     </div>

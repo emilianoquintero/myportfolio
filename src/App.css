@@ -1,19 +1,10 @@
 @import url('https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.8.1/font/bootstrap-icons.min.css');
+
 body {
   font-family: 'Alatsi', sans-serif;
   margin: 0;
   overflow: hidden;
   background: black;
-}
-
-.costum-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  
-  position: absolute;
-  width: 100vw;
-  height: 100vh;
 }
 
 .App-container {
@@ -25,12 +16,6 @@ body {
   height: 84vh;
   max-width: 1268px;
   max-height: 674px;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
 }
 
 @keyframes FadeInLeft {
@@ -56,5 +41,25 @@ body {
     opacity: 0;
     -webkit-transform: translate3d(-70%, 0, 0);
     transform: translate3d(-70%, 0, 0);
+  }
+}
+
+/* Media query para pantallas más pequeñas */
+@media (max-width: 950px) {
+  body {
+    font-family: 'Alatsi', sans-serif;
+    margin: 0;
+    overflow: auto;
+  }
+  
+  .App-container {
+    display: flex;
+    flex-direction: column; /* Alineación vertical */
+    align-items: center;    /* Centrado horizontal */
+    margin: 0px;
+    position: relative;
+    height: 100%;
+    max-width: 100%;
+    max-height: 100vh;
   }
 }

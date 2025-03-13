@@ -1,17 +1,17 @@
 .Profile-card {
     position: relative;
     float: left;
-    width: 30em;
+    width: 25vw;
     height: 100%;
-    background-color: var(--color-fondo);
     z-index: 1;
+    background-color: var(--color-fondo);
     border-radius: var(--bordes);
 }
   
 .Profile-card-align {
     position: relative;
     left: 0%;
-    width: 30em;
+    width: 25vw;
     height: 100%;
     display: flex;
     flex-direction: column;
@@ -28,7 +28,7 @@
     left: 0;
     top: 0;
     height: 57%;
-    width: 100%;;
+    width: 100%;
     background-size: cover;
     background-position: center;
 }
@@ -49,8 +49,10 @@
 }
 
 .Profile-social {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
     margin-bottom: 15px;
-    display: inline-block;
     vertical-align: middle;
 }
 
@@ -119,4 +121,69 @@
     width: 2px; /* Grosor de la línea */
     background: radial-gradient(ellipse at left, rgba(197, 202, 213, 0.15) 0%, rgba(255, 255, 255, 0) 70%);
     transform: translateX(50%); /* Mueve la línea hacia la derecha sin desplazar el contenido */
+}
+
+@media (max-width: 950px) {
+    .Profile-card {
+        position: relative;
+        margin-top: 5px;
+        width: 95vw;
+        height: 35vh;
+        z-index: 1;
+        background-color: var(--color-fondo);
+        border-radius: var(--bordes);
+    }
+      
+    .Profile-card-align {
+        position: relative;
+        width: 95vw;
+        height: 35vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+    
+    .Profile-photo {
+        min-height: 10vh;
+        height: 15vh;
+        width: 95vw;
+        background-position: 30% 30%;;
+    }
+    
+    .Profile-name {
+        margin-top: 10vh;
+        margin-bottom: 1vh;
+    }
+    
+    .Profile-title {
+        margin-bottom:1vh;
+    }
+
+    .Profile-social a {
+        margin: 0 20px;
+        display: inline-block;
+        vertical-align: middle;
+        font-size: var(--font-size-subtitles);
+        color: var(--color-fuente); /* Utiliza el color del elemento padre */
+        text-decoration: none; /* Elimina el subrayado */
+    }
+
+    .Profile-card-bottoms {
+        height: 40px;
+    }
+    
+    .Profile-card-bottoms a {
+        height: 10px;
+        line-height: 40px;
+    }
+    
+
+    .Profile-card-bottoms a:hover,
+    .Profile-social a:hover {
+    color: var(--color-fuente);
+    transition: color 0.3s ease; /* Transición de color lenta */
+}
+    
 }

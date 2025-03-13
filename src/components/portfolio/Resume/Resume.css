@@ -46,3 +46,21 @@
 .icon-check {
     font-size: 40px;
 }
+
+.Title{
+
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+@media (max-width: 950px) {
+    .col-6{
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+
+    .content-resume {
+        min-height: auto;
+    }
+}
